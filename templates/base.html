@@ -1,17 +1,20 @@
 <html lang="en">
+    {% load static %}
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shop</title>
         {% block links %}
-
+            
         {% endblock %}
     </head>
     <body>
         <header>
             <nav>
-                <a href="{% url 'profile' %}">Shop</a>
-                <a href="{% url 'posts' %}">Posts</a>
+                <a href="/"> main </a>
+                <a href="{% url 'post' %}"> post page </a>
+                <a href="{% url 'profile' %}"> profile </a>
+                <link rel="stylesheet" href="css/base.css">
             </nav>
         </header>
         <body>        
